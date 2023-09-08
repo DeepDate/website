@@ -1,0 +1,251 @@
+// Quality Checker Area CSS
+.quality-checker-area {
+    .shapes {
+        .shape1 {
+            right: auto;
+            bottom: 12%;
+            left: 1%;
+        }
+        .shape2 {
+            top: 28%;
+            right: 5%;
+            z-index: 1;
+        }
+    }
+}
+.imageComparisonSlider {
+    position: relative;
+    max-width: 1095px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+ 
+    .react-tabs {
+        .react-tabs__tab-list {
+            text-align: center;
+            display: block;
+            border: 0;
+            margin: {
+                bottom: 30px;
+                top: -20px;
+            };
+            .react-tabs__tab {
+                display: inline-block;
+                border: 0;
+                color: #000000;
+                margin-bottom: 0;
+                padding: 13px 30px;
+                border-radius: 40px;
+                letter-spacing: 0.05em;
+                transition: var(--transition);
+                background-color: transparent;
+                font: {
+                    size: var(--fontSize);
+                    weight: 500;
+                };
+                &.react-tabs__tab--selected {
+                    color: #000000 !important;
+                    background-color: #f4f4f4;
+                }
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+    }
+    
+    div {
+        img {
+            &:first-child {
+                border-radius: 20px 0 0 20px !important;
+            }
+            &:last-child {
+                border-radius: 0 20px 20px 0 !important;
+            }
+        }
+        .quality-checker-box {
+            img {
+                border-radius: 20px !important;
+            }
+        }
+    }
+    .shapes {
+        .shape1 {
+            right: auto !important;
+            bottom: -7% !important;
+            left: -11% !important;
+        }
+        .shape2 {
+            top: 6% !important;
+            right: -3% !important;
+            z-index: 3 !important;
+        }
+    }
+}
+.quality-checker-box {
+    img {
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Quality Checker Area CSS
+    .imageComparisonSlider {
+        max-width: 100%;
+         
+        .react-tabs {
+            margin: {
+                bottom: 20px;
+                top: 0;
+            };
+            .react-tabs__tab {
+                margin-bottom: 5px;
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+     
+        div {
+            img {
+                &:first-child {
+                    border-radius: 10px 0 0 10px !important;
+                }
+                &:last-child {
+                    border-radius: 0 10px 10px 0 !important;
+                }
+            }
+            .quality-checker-box {
+                img {
+                    border-radius: 10px !important;
+                }
+            }
+        }
+    }
+    .quality-checker-box {
+        img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Quality Checker Area CSS
+    .imageComparisonSlider {
+        max-width: 100%;
+        
+        .react-tabs {
+            margin: {
+                bottom: 25px;
+                top: -5px;
+            };
+            .react-tabs__tab-list {
+                padding: 10px 25px;
+                font-size: 15px;
+            }
+        }
+    }
+    .quality-checker-box {
+        img {
+            margin-bottom: 18px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Quality Checker Area CSS
+    .quality-checker-area {
+        .shapes {
+            .shape1 {
+                display: none;
+            }
+        }
+    }
+    .imageComparisonSlider {
+        max-width: 100%;
+        
+        .react-tabs {
+            .react-tabs__tab-list {
+                margin: {
+                    bottom: 25px;
+                    top: -10px;
+                };
+                .react-tabs__tab {
+                    .nav-link {
+                        padding: 11px 28px;
+                    }
+                }
+            }
+          
+        }
+        .shapes {
+            display: none;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Quality Checker Area CSS
+    .quality-checker-area {
+        .shapes {
+            .shape1 {
+                display: none;
+            }
+        }
+    }
+    .imageComparisonSlider {
+        max-width: 960px;
+        
+        .shapes {
+            .shape1 {
+                left: -9%;
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Quality Checker Area CSS
+    .quality-checker-area {
+        .shapes {
+            .shape1 {
+                right: auto;
+                bottom: 12%;
+                left: 8%;
+            }
+            .shape2 {
+                top: 29%;
+                right: 15%;
+            }
+        }
+    }
+
+}

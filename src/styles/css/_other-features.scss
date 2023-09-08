@@ -1,0 +1,279 @@
+// Other Features Area CSS
+.other-features-area {
+    .container-fluid {
+        padding: {
+            left: 20px;
+            right: 20px;
+        };
+    }
+}
+.other-features-box {
+    transition: var(--transition);
+    background-color: #f4f4f4;
+    padding: 75px 40px 50px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    .main-image {
+        margin-bottom: 55px;
+        transition: var(--transition);
+    }
+    h4 {
+        margin-bottom: 0;
+        transition: var(--transition);
+        font: {
+            size: 20px;
+            weight: 600;
+        };
+    }
+    .content {
+        transition: var(--transition);
+        visibility: hidden;
+        position: absolute;
+        text-align: start;
+        opacity: 0;
+        bottom: 0;
+        left: 0;
+        padding: {
+            left: 40px;
+            right: 40px;
+            bottom: 20px;
+        };
+        h4 {
+            margin-bottom: 13px;
+            color: var(--whiteColor);
+            transition: var(--transition);
+        }
+        p {
+            color: #cecdcd;
+        }
+    }
+    .shape {
+        left: 0;
+        right: 0;
+        top: 15px;
+        z-index: -1;
+        position: absolute;
+        pointer-events: none;
+        transition: var(--transition);
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    &:hover {
+        background-color: var(--blackColor);
+
+        .main-image {
+            transform: scale(.8) translateY(-50px);
+        }
+        .shape {
+            opacity: .10;
+        }
+        h4 {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .content {
+            opacity: 1;
+            visibility: visible;
+            padding-bottom: 40px;
+
+            h4 {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Other Features Area CSS
+    .other-features-area {
+        .container-fluid {
+            padding: {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            };
+        }
+    }
+    .other-features-box {
+        padding: 30px 20px;
+        border-radius: 5px;
+
+        .main-image {
+            margin-bottom: 25px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        .content {
+            padding: {
+                left: 20px;
+                right: 20px;
+                bottom: 10px;
+            };
+            h4 {
+                margin-bottom: 10px;
+            }
+        }
+        &:hover {
+            .main-image {
+                transform: scale(0.8) translateY(-35px);
+            }
+            .content {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Other Features Area CSS
+    .other-features-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Other Features Area CSS
+    .other-features-area {
+        .container-fluid {
+            max-width: 720px;
+            padding: {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            };
+        }
+    }
+    .other-features-box {
+        padding: 35px 25px;
+        border-radius: 10px;
+
+        .main-image {
+            margin-bottom: 25px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        .content {
+            padding: {
+                left: 25px;
+                right: 25px;
+                bottom: 15px;
+            };
+            h4 {
+                margin-bottom: 10px;
+            }
+        }
+        &:hover {
+            .main-image {
+                transform: scale(0.8) translateY(-45px);
+            }
+            .content {
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Other Features Area CSS
+    .other-features-area {
+        .container-fluid {
+            max-width: 960px;
+            padding: {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            };
+        }
+    }
+    .other-features-box {
+        padding: 50px 25px;
+
+        .main-image {
+            margin-bottom: 35px;
+        }
+        .content {
+            padding: {
+                left: 25px;
+                right: 25px;
+                bottom: 20px;
+            };
+            h4 {
+                margin-bottom: 12px;
+            }
+        }
+        &:hover {
+            .content {
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Other Features Area CSS
+    .other-features-area {
+        .container-fluid {
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .other-features-box {
+        padding: 50px 25px;
+
+        .content {
+            padding: {
+                left: 25px;
+                right: 25px;
+                bottom: 20px;
+            };
+            h4 {
+                margin-bottom: 12px;
+            }
+        }
+        &:hover {
+            .content {
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Other Features Area CSS
+    .other-features-area {
+        .container-fluid {
+            max-width: 1920px;
+            padding: {
+                left: 20px;
+                right: 20px;
+            };
+        }
+    }
+
+}

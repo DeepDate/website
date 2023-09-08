@@ -1,0 +1,333 @@
+// How It Works Area CSS
+.how-it-works-area {
+    &.bg-half-color {
+        &::before {
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            content: '';
+            height: 55%;
+            position: absolute;
+            border-radius: 30px;
+            background-color: var(--blackColor);
+            margin: {
+                left: 30px;
+                right: 30px;
+            };
+        }
+        .section-title {
+            .sub-title {
+                background: var(--warningGradientColor);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h2 {
+                color: var(--whiteColor);
+            }
+            p {
+                color: #cecdcd;
+            }
+        }
+    }
+    &.bg-252029 {
+        &.bg-half-color {
+            &::before {
+                top: auto;
+                bottom: 0;
+                height: 37%;
+                border-radius: 0;
+                background-color: #1f1a23;
+                margin: {
+                    left: 0;
+                    right: 0;
+                };
+            }
+            &::after {
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -2;
+                content: '';
+                height: 587px;
+                position: absolute;
+                filter: blur(150px);
+                background: linear-gradient(135deg, rgba(127, 38, 198, 0.3) 0%, rgba(245, 3, 134, 0.3) 100%);
+            }
+        }
+    }
+}
+.how-it-works-box {
+    background-color: #f7f7f7;
+    padding: 28px 28px 50px;
+    border-radius: 20px;
+
+    img {
+        border-radius: 20px;
+        margin-bottom: 50px;
+        transition: var(--transition);
+        border: 1.5px solid var(--blackColor);
+    }
+    h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    &.text-white {
+        background-color: #3a2f42;
+
+        h3 {
+            color: var(--whiteColor);
+        }
+        p {
+            color: #cfcfcf;
+        }
+    }
+    &:hover {
+        img {
+            border-color: var(--primaryColor);
+        }
+    }
+}
+.how-it-works-item {
+    padding: 30px 25px 30px 150px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    position: relative;
+
+    .icon {
+        top: 50%;
+        left: 25px;
+        position: absolute;
+        border-radius: 20px;
+        transform: translateY(-50%);
+
+        img {
+            border-radius: 20px;
+            border: 1.5px solid #0c0b0b;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+.col-lg-4 {
+    &:nth-child(2) {
+        .how-it-works-item {
+            margin-top: 25px;
+        }
+    }
+}
+.get-started-btn {
+    margin-top: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // How It Works Area CSS
+    .how-it-works-area {
+        &.bg-half-color {
+            &::before {
+                height: 45%;
+                border-radius: 0;
+                margin: {
+                    left: 0;
+                    right: 0;
+                };
+            }
+        }
+    }
+    .how-it-works-box {
+        padding: 25px 20px;
+        border-radius: 10px;
+
+        img {
+            border-radius: 10px;
+            margin-bottom: 22px;
+            border-width: 1px;
+        }
+        h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+    }
+    .get-started-btn {
+        margin-top: 5px;
+    }
+    .how-it-works-item {
+        padding: 20px 15px;
+        border-radius: 10px;
+    
+        .icon {
+            top: 0;
+            left: 0;
+            position: relative;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transform: translateY(0);
+    
+            img {
+                border-radius: 10px;
+                border-width: 1px;
+            }
+        }
+        h4 {
+            font-size: 16px;
+        }
+    }
+    .col-lg-4 {
+        &:nth-child(2) {
+            .how-it-works-item {
+                margin-top: 0;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // How It Works Area CSS
+    .how-it-works-area {
+        &.bg-half-color {
+            &::before {
+                height: 35%;
+                border-radius: 0;
+                margin: {
+                    left: 0;
+                    right: 0;
+                };
+            }
+        }
+    }
+    .how-it-works-box {
+        padding: 25px 20px;
+        border-radius: 15px;
+
+        img {
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+    }
+    .get-started-btn {
+        margin-top: 10px;
+    }
+    .how-it-works-item {
+        padding: 25px;
+        border-radius: 15px;
+    
+        .icon {
+            top: 0;
+            left: 0;
+            position: relative;
+            border-radius: 15px;
+            margin-bottom: 18px;
+            transform: translateY(0);
+    
+            img {
+                border-radius: 15px;
+            }
+        }
+        h4 {
+            font-size: 18px;
+        }
+    }
+    .col-lg-4 {
+        &:nth-child(2) {
+            .how-it-works-item {
+                margin-top: 0;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // How It Works Area CSS
+    .how-it-works-area {
+        &.bg-half-color {
+            &::before {
+                height: 55%;
+                margin: {
+                    left: 10px;
+                    right: 10px;
+                };
+            }
+        }
+    }
+    .how-it-works-box {
+        padding: 30px 25px;
+
+        img {
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+    }
+    .get-started-btn {
+        margin-top: 10px;
+    }
+    .how-it-works-item {
+        padding: 25px;
+    
+        .icon {
+            top: 0;
+            left: 0;
+            position: relative;
+            margin-bottom: 18px;
+            transform: translateY(0);
+        }
+        h4 {
+            font-size: 19px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // How It Works Area CSS
+    .how-it-works-item {
+        padding: 30px 20px 30px 140px;
+
+        .icon {
+            left: 20px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // How It Works Area CSS
+    .how-it-works-area {
+        &.bg-half-color {
+            &::before {
+                margin: {
+                    left: 50px;
+                    right: 50px;
+                };
+            }
+        }
+    }
+
+}

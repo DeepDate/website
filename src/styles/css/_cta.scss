@@ -1,0 +1,118 @@
+// CTA Area CSS
+.cta-inner-box {
+    border-radius: 30px;
+    padding: 50px 70px;
+
+    h2 {
+        font-size: 46px;
+        margin-bottom: 0;
+        letter-spacing: normal;
+
+        span {
+            font-weight: 700;
+
+            &:nth-child(1) {
+                &:hover {
+                    background: var(--secondarGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:nth-child(2) {
+                &:hover {
+                    background: var(--primaryGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        border-radius: 30px;
+        background: var(--warningGradientColor);
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // CTA Area CSS
+    .cta-inner-box {
+        border-radius: 10px;
+        padding: 40px 25px;
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        &::before {
+            border-radius: 10px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // CTA Area CSS
+    .cta-inner-box {
+        padding: 50px;
+        border-radius: 20px;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        &::before {
+            border-radius: 20px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // CTA Area CSS
+    .cta-inner-box {
+        padding: 50px;
+
+        h2 {
+            font-size: 40px;
+        }
+        .default-btn {
+            padding: {
+                left: 25px;
+                right: 55px;
+            };
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    
+    // CTA Area CSS
+    .cta-inner-box {
+        h2 {
+            font-size: 45px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,74 @@
+{
+  "otherFeatures": {
+    "subTitle": "Other Features",
+    "title": "There is Many more in Timo",
+    "shortDescription": "Timo is constantly growing just like the possibilities of what you can achieve. 3D opens a new door for creativity.",
+
+    "features": [
+      {
+        "id": 1,
+        "featureImg": "../../images/other-features/feature1.png",
+        "title": "Teams, Projects & Folders",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "100"
+      },
+      {
+        "id": 2,
+        "featureImg": "../../images/other-features/feature2.png",
+        "title": "Image Exports",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "200"
+      },
+      {
+        "id": 3,
+        "featureImg": "../../images/other-features/feature3.png",
+        "title": "Polygonal Modeling",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "300"
+      },
+      {
+        "id": 4,
+        "featureImg": "../../images/other-features/feature4.png",
+        "title": "React Export",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "400"
+      },
+      {
+        "id": 5,
+        "featureImg": "../../images/other-features/feature5.png",
+        "title": "Material Assets",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "500"
+      },
+      {
+        "id": 6,
+        "featureImg": "../../images/other-features/feature6.png",
+        "title": "Templates Library",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "600"
+      },
+      {
+        "id": 7,
+        "featureImg": "../../images/other-features/feature7.png",
+        "title": "Vector Editing",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "700"
+      },
+      {
+        "id": 8,
+        "featureImg": "../../images/other-features/feature8.png",
+        "title": "Web Browser Events",
+        "text": "Create teams and organize your files in folders and projects.",
+        "shapeImg": "../../images/other-features/raon.png",
+        "aosDelay": "800"
+      }
+    ]
+  }
+}

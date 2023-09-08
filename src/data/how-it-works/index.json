@@ -1,0 +1,36 @@
+{
+    "howItWorks": {
+      "subTitle": "How It Works",
+      "title": "Here How It Works",
+      "shortDescription": "You’re busy, so we’ll make this easy. Timo is constantly growing just like the possibilities of what you can achieve.",
+      "shapeImg1": "../../images/shape/shape4.png", 
+      "shapeImg2": "../../images/shape/shape5.png", 
+      "btnText": "Get Started Now", 
+      "btnLink": "/pricing", 
+  
+      "steps": [
+        {
+          "id": 1,
+          "howItWorkImg": "../../images/how-it-works/how-it-work1.jpg", 
+          "title": "Step - 01",
+          "text": "Open an account and select an artboard for creating a 3d art. You can select from the ready template for your first work.",
+          "aosDelay": "100"
+        },
+        {
+          "id": 2,
+          "howItWorkImg": "../../images/how-it-works/how-it-work2.jpg", 
+          "title": "Step - 02",
+          "text": "Follow the instruction and watch all youtube video to get a clear idea about Timo and start your first 3d design project.",
+          "aosDelay": "200"
+        },
+        {
+          "id": 3,
+          "howItWorkImg": "../../images/how-it-works/how-it-work3.jpg", 
+          "title": "Step - 03",
+          "text": "Save file in web and export in your desired format. In your free trial you can only get the png file of your design.",
+          "aosDelay": "300"
+        }
+      ]
+    }
+  }
+  

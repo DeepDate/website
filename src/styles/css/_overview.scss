@@ -1,0 +1,616 @@
+// Overview Area CSS
+.overview-content {
+    padding-right: 30px;
+
+    .sub-title {
+        background: var(--primaryGradientColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+        display: inline-block;
+        font: {
+            weight: 500;
+            size: 15px;
+        };
+    }
+    h2 {
+        font-size: 46px;
+        margin-bottom: 15px;
+        letter-spacing: normal;
+
+        span {
+            font-weight: 700;
+
+            &:nth-child(1) {
+                &:hover {
+                    background: var(--secondarGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:nth-child(2) {
+                &:hover {
+                    background: var(--primaryGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+    .features-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            bottom: 0;
+            top: 30px;
+        };
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            letter-spacing: 0.05em;
+            font: {
+                weight: 600;
+                size: 20px;
+            };
+            .icon {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+                margin-right: 20px;
+                background-color: #f6f6f6;
+
+                img {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    margin: {
+                        left: auto;
+                        right: auto;
+                    };
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.text-white {
+        h2 {
+            color: var(--whiteColor);
+        }
+        p {
+            color: #cfcfcf;
+        }
+        .features-list {
+            li {
+                .icon {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+    }
+}
+.overview-image {
+    position: relative;
+    z-index: 1;
+    padding: {
+        left: 160px;
+        bottom: 100px;
+    };
+    img {
+        border-radius: 20px;
+
+        &:nth-child(2) {
+            left: 0;
+            top: 60px;
+            position: absolute;
+            filter: drop-shadow(0px 14px 24px rgba(78, 105, 131, 0.3));
+        }
+        &:nth-child(3) {
+            bottom: 0;
+            left: 50px;
+            position: absolute;
+            filter: drop-shadow(-10px 14px 34px rgba(0, 0, 0, 0.15));
+        }
+    }
+    &::before {
+        bottom: 0;
+        left: -8%;
+        z-index: -1;
+        content: '';
+        width: 335px;
+        height: 335px;
+        display: none;
+        filter: blur(65px);
+        position: absolute;
+        background: linear-gradient(135deg, rgba(127, 38, 198, 0.4) 0%, rgba(245, 3, 134, 0.4) 100%);
+    }
+    &.text-white {
+        img {
+            &:nth-child(2) {
+                filter: drop-shadow(-20px 14px 34px rgba(0, 0, 0, 0.35));
+            }
+            &:nth-child(3) {
+                filter: drop-shadow(-20px 14px 24px rgba(0, 0, 0, 0.25));
+            }
+        }
+        &::before {
+            display: block;
+        }
+    }
+}
+.overview-section-title {
+    max-width: 610px;
+    text-align: start;
+    margin: {
+        left: 0;
+        right: 0;
+        bottom: 35px;
+    };
+    p {
+        max-width: 100%;
+        margin: {
+            left: 0;
+            right: 0;
+        };
+    }
+    .shapes {
+        .shape5 {
+            top: 42%;
+            right: -23%;
+            width: 55px;
+        }
+    }
+}
+.overview-big-box {
+    background: linear-gradient(135deg, rgba(254, 88, 74, 0.1) 0%, rgba(249, 196, 42, 0.1) 100%);
+    border-radius: 20px;
+    padding: {
+        top: 75px;
+        left: 50px;
+        right: 50px;
+    };
+    .image {
+        padding-right: 15px;
+        border-radius: 10px 10px 0 0;
+
+        img {
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    .content {
+        h3 {
+            margin-bottom: 8px;
+            font: {
+                size: 30px;
+                weight: 700;
+            };
+        }
+        h4 {
+            font: {
+                size: 20px;
+                weight: 600;
+            };
+            margin: {
+                bottom: 12px;
+                top: 25px;
+            };
+        }
+    }
+}
+.overview-box {
+    background: linear-gradient(135deg, rgba(0, 128, 239, 0.1) 0%, rgba(0, 214, 218, 0.1) 100%);
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 20px;
+
+    img {
+        border-radius: 20px;
+    }
+    .content {
+        padding: {
+            top: 35px;
+            left: 10px;
+            right: 10px;
+            bottom: 19px;
+        };
+        h4 {
+            margin-bottom: 5px;
+            letter-spacing: 0.03em;
+            font: {
+                size: 20px;
+                weight: 600;
+            };
+        }
+    }
+}
+.col-lg-12 {
+    &:nth-child(2) {
+        .overview-box {
+            background: linear-gradient(135deg, rgba(42, 217, 70, 0.1) 0%, rgba(35, 227, 181, 0.1) 100%);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Overview Area CSS
+    .overview-content {
+        padding-right: 0;
+
+        .sub-title {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        .features-list {
+            margin-top: 15px;
+
+            li {
+                margin-bottom: 15px;
+                font-size: 16px;
+
+                .icon {
+                    width: 55px;
+                    height: 55px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .overview-image {
+        margin-top: 25px;
+        padding: {
+            left: 30px;
+            bottom: 40px;
+        };
+        img {
+            border-radius: 5px;
+
+            &:nth-child(2) {
+                top: 60px;
+                width: 60px;
+            }
+            &:nth-child(3) {
+                width: 100px;
+            }
+        }
+        &::before {
+            display: none !important;
+        }
+    }
+    .overview-section-title {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .overview-big-box {
+        border-radius: 10px;
+        padding: {
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 20px;
+        };
+        .image {
+            padding-right: 0;
+            border-radius: 10px;
+    
+            img {
+                border-radius: 10px;
+            }
+        }
+        .content {
+            margin-top: 20px;
+
+            h3 {
+                margin-bottom: 8px;
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 16px;
+                margin: {
+                    bottom: 8px;
+                    top: 15px;
+                };
+            }
+        }
+    }
+    .overview-box {
+        border-radius: 10px;
+        margin-left: 0;
+        padding: 15px;
+    
+        img {
+            border-radius: 10px;
+        }
+        .content {
+            padding: {
+                top: 20px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+            };
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Overview Area CSS
+    .overview-image {
+        padding: {
+            left: 70px;
+            bottom: 90px;
+        };
+        img {
+            &:nth-child(2) {
+                width: 160px;
+            }
+            &:nth-child(3) {
+                width: 200px;
+                left: 25px;
+            }
+        }
+    }
+    .overview-big-box {
+        padding: 15px;
+
+        .content {
+            margin-top: 0;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Overview Area CSS
+    .overview-content {
+        padding-right: 0;
+
+        .sub-title {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .features-list {
+            margin-top: 20px;
+
+            li {
+                font-size: 17px;
+
+                .icon {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .overview-image {
+        margin-top: 25px;
+        
+        img {
+            border-radius: 10px;
+        }
+        &::before {
+            display: none !important;
+        }
+    }
+    .overview-section-title {
+        max-width: 100%;
+
+        p {
+            max-width: 100%;
+        }
+    }
+    .overview-big-box {
+        border-radius: 15px;
+        padding: {
+            top: 30px;
+            left: 30px;
+            right: 30px;
+        };
+        .image {
+            padding-right: 0;
+        }
+        .content {
+            h3 {
+                font-size: 22px;
+            }
+            h4 {
+                font-size: 17px;
+                margin: {
+                    bottom: 8px;
+                    top: 20px;
+                };
+            }
+        }
+    }
+    .overview-box {
+        border-radius: 15px;
+        margin-left: 0;
+
+        img {
+            border-radius: 15px;
+        }
+        .content {
+            padding: {
+                top: 22px;
+                left: 5px;
+                bottom: 0;
+                right: 5px;
+            };
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Overview Area CSS
+    .overview-content {
+        padding-right: 0;
+
+        .sub-title {
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .features-list {
+            margin-top: 20px;
+
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+    .overview-image {
+        padding: {
+            left: 60px;
+            bottom: 75px;
+        };
+        img {
+            &:nth-child(2) {
+                top: 50px;
+                width: 140px;
+            }
+            &:nth-child(3) {
+                left: 15px;
+                width: 200px;
+            }
+        }
+    }
+    .overview-section-title {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .overview-big-box {
+        padding: {
+            top: 35px;
+            left: 20px;
+            right: 20px;
+        };
+        .image {
+            padding-right: 0;
+        }
+        .content {
+            h3 {
+                font-size: 25px;
+            }
+            h4 {
+                font-size: 19px;
+                margin: {
+                    bottom: 10px;
+                    top: 20px;
+                };
+            }
+        }
+    }
+    .overview-box {
+        margin-left: 0;
+        padding: 15px;
+    
+        .content {
+            padding: {
+                top: 20px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+            };
+            h4 {
+                font-size: 19px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Overview Area CSS
+    .overview-content {
+        padding-right: 0;
+
+        h2 {
+            font-size: 44px;
+        }
+        .features-list {
+            margin-top: 25px;
+        }
+    }
+    .overview-image {
+        padding: {
+            left: 105px;
+            bottom: 55px;
+        };
+        img {
+            &:nth-child(2) {
+                left: 15px;
+            }
+            &:nth-child(3) {
+                left: 50px;
+            }
+        }
+    }
+    .overview-section-title {
+        .shapes {
+            .shape5 {
+                right: -20%;
+            }
+        }
+    }
+    .overview-big-box {
+        padding: {
+            top: 50px;
+            left: 30px;
+            right: 30px;
+        };
+        .image {
+            padding-right: 5px;
+        }
+        .content {
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+    .overview-box {
+        margin-left: 0;
+    
+        .content {
+            padding: {
+                top: 23px;
+                bottom: 15px;
+            };
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

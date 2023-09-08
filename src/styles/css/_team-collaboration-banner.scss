@@ -1,0 +1,276 @@
+// Banner Area CSS
+.tc-banner-area {
+    padding-top: 220px;
+    background: {
+        image: url(../../images/bg/bg11.jpg);
+        position: bottom center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    .users-list {
+        img {
+            z-index: -1;
+            width: 85px;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+
+            &:nth-child(1) {
+                left: 3%;
+                top: 19%;
+            }
+            &:nth-child(2) {
+                width: 75px;
+                left: 15%;
+                top: 43%;
+            }
+            &:nth-child(3) {
+                width: 80px;
+                bottom: 28%;
+                left: 10%;
+            }
+            &:nth-child(4) {
+                width: 70px;
+                right: 3%;
+                top: 18%;
+            }
+            &:nth-child(5) {
+                width: 70px;
+                right: 12%;
+                top: 39%;
+            }
+            &:nth-child(6) {
+                width: 85px;
+                bottom: 27%;
+                right: 7%;
+            }
+        }
+    }
+}
+.tc-banner-content {
+    text-align: center;
+    max-width: 1030px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    h1 {
+        font-size: 70px;
+        margin-bottom: 20px;
+        letter-spacing: normal;
+
+        span {
+            font-weight: 700;
+
+            &:nth-child(1) {
+                &:hover {
+                    background: var(--secondarGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:nth-child(2) {
+                &:hover {
+                    background: var(--primaryGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:nth-child(3) {
+                &:hover {
+                    background: var(--warningGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+    p {
+        max-width: 850px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .default-btn {
+        margin-top: 15px;
+    }
+}
+.tc-banner-image {
+    text-align: center;
+    margin-top: 90px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Banner Area CSS
+    .tc-banner-area {
+        padding-top: 130px;
+
+        .users-list {
+            display: none;
+        }
+    }
+    .tc-banner-content {
+        max-width: 100%;
+        
+        h1 {
+            margin-bottom: 12px;
+            line-height: 1.4;
+            font-size: 26px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn {
+            margin-top: 3px;
+        }
+    }
+    .tc-banner-image {
+        margin-top: 25px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Banner Area CSS
+    .tc-banner-area {
+        padding-top: 155px;
+        
+        .users-list {
+            display: none;
+        }
+    }
+    .tc-banner-content {
+        max-width: 100%;
+        
+        h1 {
+            margin-bottom: 12px;
+            line-height: 1.4;
+            font-size: 35px;
+        }
+        p {
+            max-width: 850px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .tc-banner-image {
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Banner Area CSS
+    .tc-banner-area {
+        padding-top: 200px;
+        
+        .users-list {
+            img {
+                width: 65px;
+
+                &:nth-child(1) {
+                    left: 2%;
+                    top: 15%;
+                }
+                &:nth-child(2) {
+                    width: 55px;
+                    left: 10%;
+                }
+                &:nth-child(3) {
+                    width: 60px;
+                    left: 5%;
+                }
+                &:nth-child(4) {
+                    width: 60px;
+                    right: 2%;
+                    top: 15%;
+                }
+                &:nth-child(5) {
+                    width: 60px;
+                    right: 9%;
+                }
+                &:nth-child(6) {
+                    width: 55px;
+                    right: 5%;
+                }
+            }
+        }
+    }
+    .tc-banner-content {
+        max-width: 800px;
+        
+        h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        p {
+            max-width: 750px;
+        }
+        .default-btn {
+            margin-top: 8px;
+        }
+    }
+    .tc-banner-image {
+        margin-top: 50px;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Banner Area CSS
+    .tc-banner-content {
+        max-width: 950px;
+        
+        h1 {
+            font-size: 65px;
+        }
+    }
+    .tc-banner-image {
+        margin-top: 60px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Banner Area CSS
+    .tc-banner-area {
+        .users-list {
+            img {
+                &:nth-child(1) {
+                    left: 6%;
+                }
+                &:nth-child(2) {
+                    left: 22%;
+                }
+                &:nth-child(3) {
+                    left: 15%;
+                }
+                &:nth-child(4) {
+                    right: 5%;
+                }
+                &:nth-child(5) {
+                    right: 17%;
+                }
+                &:nth-child(6) {
+                    right: 9%;
+                }
+            }
+        }
+    }
+
+}

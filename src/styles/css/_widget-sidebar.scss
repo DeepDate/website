@@ -1,0 +1,539 @@
+// Widget Sidebar Area CSS
+.widget-area {
+    padding-left: 35px;
+
+    .widget {
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #eaeaea;
+
+        .widget-title {
+            margin-bottom: 25px;
+            font: {
+                size: 20px;
+                weight: 600;
+            };
+        }
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+    .widget_search {
+        form {
+            position: relative;
+
+            .search-field {
+                width: 100%;
+                height: 60px;
+                display: block;
+                border-radius: 10px;
+                letter-spacing: 1px;
+                color: var(--blackColor);
+                font-size: var(--fontSize);
+                border: 1px solid #f6f5f0;
+                background-color: #f6f5f0;
+                padding: {
+                    top: 3px;
+                    left: 20px;
+                    right: 20px;
+                };
+                &::placeholder {
+                    transition: var(--transition);
+                    color: #6c6c6c;
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            button {
+                top: 50%;
+                padding: 0;
+                right: 22px;
+                border: none;
+                line-height: 1;
+                font-size: 20px;
+                margin-top: 1px;
+                color: #fe584a;
+                position: absolute;
+                transform: translateY(-50%);
+                transition: var(--transition);
+                background-color: transparent;
+
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+    }
+    .widget_posts_thumb {
+        .item {
+            margin-bottom: 25px;
+            align-items: center;
+            flex-wrap: wrap;
+            display: flex;
+
+            .thumb {
+                border-radius: 5px;
+                display: block;
+                flex: 0 0 auto;
+                width: 27%;
+
+                img {
+                    border-radius: 5px;
+                }
+            }
+            .info {
+                padding-left: 15px;
+                flex: 0 0 auto;
+                width: 73%;
+
+                .title {
+                    font-size: 15px;
+                    line-height: 1.5;
+                    margin: {
+                        bottom: 0;
+                        top: 5px;
+                    };
+                }
+                .meta {
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    list-style-type: none;
+        
+                    li {
+                        font-size: 14px;
+                        margin-right: 26px;
+                        position: relative;
+                        display: inline-block;
+                        letter-spacing: 0.05em;
+                        color: var(--paragraphColor);
+        
+                        a {
+                            color: var(--paragraphColor);
+        
+                            &:hover {
+                                color: var(--primaryColor);
+                            }
+                        }
+                        &::before, &::after {
+                            top: 50%;
+                            width: 1px;
+                            content: '';
+                            right: -19px;
+                            height: 12px;
+                            position: absolute;
+                            background-color: var(--paragraphColor);
+                            transform: translateY(-50%) rotate(25deg);
+                        }
+                        &::after {
+                            right: -12px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+        
+                            &::before, &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .widget_categories {
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li {
+                margin-bottom: 14px;
+                letter-spacing: 0.05em;
+
+                a {
+                    display: block;
+                    position: relative;
+                    color: var(--paragraphColor);
+                    font: {
+                        size: var(--fontSize);
+                        weight: 500;
+                    };
+                    .count {
+                        color: #8d8d8d;
+                        font-weight: 400;
+                    }
+                    &::before {
+                        top: 50%;
+                        right: 0;
+                        width: 18px;
+                        content: '';
+                        height: 18px;
+                        position: absolute;
+                        border-radius: 3px;
+                        transform: translateY(-50%);
+                        border: 1px solid #0080ef;
+                    }
+                    &::after {
+                        top: 50%;
+                        right: 4px;
+                        opacity: 0;
+                        width: 10px;
+                        content: '';
+                        height: 10px;
+                        visibility: hidden;
+                        position: absolute;
+                        border-radius: 3px;
+                        transform: translateY(-50%);
+                        transition: var(--transition);
+                        background: var(--secondarGradientColor);
+                    }
+                    &:hover {
+                        color: var(--blackColor);
+
+                        &::after {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .widget_follow_us {
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li {
+                margin-bottom: 14px;
+                letter-spacing: 0.05em;
+
+                a {
+                    display: block;
+                    position: relative;
+                    color: var(--paragraphColor);
+                    font: {
+                        size: var(--fontSize);
+                        weight: 500;
+                    };
+                    &::before {
+                        top: 50%;
+                        right: 0;
+                        width: 18px;
+                        content: '';
+                        height: 18px;
+                        position: absolute;
+                        border-radius: 3px;
+                        transform: translateY(-50%);
+                        border: 1px solid #0080ef;
+                    }
+                    &::after {
+                        top: 50%;
+                        right: 4px;
+                        opacity: 0;
+                        width: 10px;
+                        content: '';
+                        height: 10px;
+                        visibility: hidden;
+                        position: absolute;
+                        border-radius: 3px;
+                        transform: translateY(-50%);
+                        transition: var(--transition);
+                        background: var(--secondarGradientColor);
+                    }
+                    &:hover {
+                        color: var(--blackColor);
+
+                        &::after {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .widget_tag_cloud {
+        .tagcloud {
+            margin-bottom: -10px;
+
+            a {
+                color: #727272;
+                padding: 8px 20px;
+                border-radius: 5px;
+                display: inline-block;
+                letter-spacing: 0.05em;
+                background-color: #f0f0f0;
+                margin: {
+                    right: 8px;
+                    bottom: 10px;
+                };
+                font: {
+                    size: 14px;
+                    weight: 500;
+                };
+                &:hover {
+                    color: var(--whiteColor);
+                    background-color: var(--primaryColor);
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Widget Sidebar Area CSS
+    .widget-area {
+        padding-left: 0;
+        margin-top: 30px;
+
+        .widget {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+
+            .widget-title {
+                margin-bottom: 18px;
+                font-size: 16px;
+            }
+        }
+        .widget_search {
+            form {
+                .search-field {
+                    height: 50px;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    padding: {
+                        top: 3px;
+                        left: 15px;
+                        right: 20px;
+                    };
+                }
+                button {
+                    right: 20px;
+                    font-size: 17px;
+                }
+            }
+        }
+        .widget_posts_thumb {
+            .item {
+                margin-bottom: 15px;
+
+                .info {
+                    .title {
+                        font-size: 14px;
+                    }
+                    .meta {
+                        li {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .widget_categories {
+            ul {
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .widget_follow_us {
+            ul {
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .widget_tag_cloud {
+            .tagcloud {
+                a {
+                    padding: 7px 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Widget Sidebar Area CSS
+    .widget-area {
+        padding-left: 0;
+        margin-top: 35px;
+
+        .widget {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+
+            .widget-title {
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+        }
+        .widget_search {
+            form {
+                .search-field {
+                    height: 55px;
+                    font-size: 15px;
+                    padding: {
+                        top: 3px;
+                        left: 17px;
+                        right: 20px;
+                    };
+                }
+                button {
+                    font-size: 19px;
+                }
+            }
+        }
+        .widget_posts_thumb {
+            .item {
+                margin-bottom: 15px;
+
+                .thumb {
+                    width: 15%;
+                }
+                .info {
+                    .meta {
+                        li {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .widget_categories {
+            ul {
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .widget_follow_us {
+            ul {
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .widget_tag_cloud {
+            .tagcloud {
+                a {
+                    padding: 7px 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Widget Sidebar Area CSS
+    .widget-area {
+        padding-left: 0;
+
+        .widget {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+
+            .widget-title {
+                font-size: 19px;
+                margin-bottom: 20px;
+            }
+        }
+        .widget_search {
+            form {
+                .search-field {
+                    height: 55px;
+                }
+            }
+        }
+        .widget_posts_thumb {
+            .item {
+                margin-bottom: 20px;
+
+                .info {
+                    .title {
+                        font-size: 14px;
+                    }
+                    .meta {
+                        li {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .widget_categories {
+            ul {
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .widget_follow_us {
+            ul {
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .widget_tag_cloud {
+            .tagcloud {
+                a {
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Widget Sidebar Area CSS
+    .widget-area {
+        padding-left: 15px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

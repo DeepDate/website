@@ -1,0 +1,334 @@
+// Banner Area CSS
+.aidt-banner-area {
+    z-index: 1;
+    position: relative;
+    background: {
+        image: url(../../images/bg/bg1.png);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        top: 290px;
+        bottom: 300px;
+    };
+}
+.aidt-banner-content {
+    text-align: center;
+    max-width: 1065px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    h1 {
+        letter-spacing: normal;
+        margin-bottom: 25px;
+        word-spacing: 8px;
+        font-size: 70px;
+        line-height: 1;
+
+        span {
+            font-weight: 700;
+
+            &:nth-child(1) {
+                &:hover {
+                    background: var(--secondarGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:nth-child(5) {
+                &:hover {
+                    background: var(--primaryGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:nth-child(6) {
+                &:hover {
+                    background: var(--warningGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        img {
+            &:nth-child(2) {
+                position: relative;
+                margin-top: -60px;
+                bottom: 10px;
+                left: 22px;
+            }
+            &:nth-child(7) {
+                margin-top: -25px;
+            }
+        }
+    }
+    p {
+        max-width: 810px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .default-btn {
+        margin-top: 15px;
+    }
+}
+.aidt-banner-images {
+    img {
+        position: absolute;
+        
+        &:nth-child(1) {
+            left: 2%;
+            top: 15%;
+            width: 190px;
+        }
+        &:nth-child(2) {
+            left: 15%;
+            bottom: 50px;
+            width: 250px;
+        }
+        &:nth-child(3) {
+            right: 7%;
+            bottom: 15%;
+            width: 200px;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Banner Area CSS
+    .aidt-banner-area {
+        padding: {
+            top: 130px;
+            bottom: 60px;
+        };
+    }
+    .aidt-banner-content {
+        max-width: 100%;
+        
+        h1 {
+            margin-bottom: 12px;
+            word-spacing: 2px;
+            line-height: 1.4;
+            font-size: 26px;
+
+            img {
+                display: none;
+            }
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn {
+            margin-top: 4px;
+        }
+    }
+    .aidt-banner-images {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: {
+            top: 15px;
+            left: -5px;
+            right: -5px;
+        };
+        img {
+            flex: 0 0 auto;
+            margin-top: 10px;
+            position: relative;
+            width: 50% !important;
+            padding: {
+                left: 5px;
+                right: 5px;
+            };
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+                width: auto;
+            }
+            &:nth-child(2) {
+                left: 0;
+                bottom: 0;
+                width: auto;
+            }
+            &:nth-child(3) {
+                right: 0;
+                bottom: 0;
+                width: auto;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Banner Area CSS
+    .aidt-banner-images {
+        img {
+            width: 33.333333% !important;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Banner Area CSS
+    .aidt-banner-area {
+        padding: {
+            top: 155px;
+            bottom: 80px;
+        };
+    }
+    .aidt-banner-content {
+        max-width: 100%;
+        
+        h1 {
+            margin-bottom: 12px;
+            word-spacing: 4px;
+            line-height: 1.4;
+            font-size: 35px;
+
+            img {
+                display: none;
+            }
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .aidt-banner-images {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: {
+            top: 30px;
+            left: -10px;
+            right: -10px;
+        };
+        img {
+            flex: 0 0 auto;
+            position: relative;
+            width: 33.333333% !important;
+            padding: {
+                left: 10px;
+                right: 10px;
+            };
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+                width: auto;
+            }
+            &:nth-child(2) {
+                left: 0;
+                bottom: 0;
+                width: auto;
+            }
+            &:nth-child(3) {
+                right: 0;
+                bottom: 0;
+                width: auto;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Banner Area CSS
+    .aidt-banner-area {
+        padding: {
+            top: 270px;
+            bottom: 250px;
+        };
+    }
+    .aidt-banner-content {
+        max-width: 100%;
+        
+        h1 {
+            margin-bottom: 15px;
+            word-spacing: 5px;
+            font-size: 50px;
+
+            img {
+                &:nth-child(4) {
+                    width: 75px;
+                    margin-top: -10px;
+                }
+                &:nth-child(7) {
+                    margin-top: -5px;
+                    width: 80px;
+                }
+            }
+        }
+        p {
+            max-width: 720px;
+        }
+        .default-btn {
+            margin-top: 8px;
+        }
+    }
+    .aidt-banner-images {
+        img {
+            &:nth-child(1) {
+                left: 2%;
+                top: 14%;
+                width: 170px;
+            }
+            &:nth-child(2) {
+                left: 15%;
+                bottom: 40px;
+                width: 210px;
+            }
+            &:nth-child(3) {
+                right: 5%;
+                bottom: 12%;
+                width: 150px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Banner Area CSS
+    .aidt-banner-images {
+        img {
+            &:nth-child(1) {
+                left: 3%;
+                top: 16%;
+                width: 295px;
+            }
+            &:nth-child(2) {
+                left: 15.6%;
+                bottom: 50px;
+                width: 295px;
+            }
+            &:nth-child(3) {
+                right: 7%;
+                bottom: 16%;
+                width: 255px;
+            }
+        }
+    }
+
+}

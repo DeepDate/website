@@ -1,0 +1,315 @@
+// Profile Authentication Area CSS
+.profile-authentication-tabs {
+    max-width: 520px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    .nav {
+        &.nav-tabs {
+            margin-bottom: 30px;
+            text-align: center;
+            display: block;
+            border: none;
+
+            .nav-item {
+                display: inline-block;
+                margin: {
+                    left: 25px;
+                    right: 25px;
+                };
+                .nav-link {
+                    background-color: transparent;
+                    transition: var(--transition);
+                    letter-spacing: 0.05em;
+                    color: #5b5b5b;
+                    margin-bottom: 0;
+                    border: none;
+                    padding: 0;
+                    font: {
+                        weight: 500;
+                        size: 30px;
+                    };
+                    &:hover, &.active {
+                        color: var(--blackColor);
+                    }
+                    &.active {
+                        font-weight: 700;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    form {
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+
+            label {
+                color: var(--blackColor);
+                position: absolute;
+                font-size: 18px;
+                left: 25px;
+                top: 22px;
+            }
+            .form-control {
+                border: 0;
+                height: 70px;
+                box-shadow: unset;
+                padding-left: 56px;
+                border-radius: 10px;
+                letter-spacing: 0.05em;
+                color: var(--blackColor);
+                background-color: #f6f5f0;
+
+                &::placeholder {
+                    color: #6c6c6c;
+                    transition: var(--transition);
+                    font: {
+                        size: 15px;
+                        weight: 400;
+                    };
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            textarea.form-control {
+                height: auto;
+                padding-top: 25px;
+            }
+        }
+        .form-check {
+            margin-bottom: 20px;
+
+            .form-check-input {
+                border-color: #464646;
+                border-radius: 3px;
+                box-shadow: unset;
+                margin-top: 0.2em;
+                cursor: pointer;
+
+                &:checked {
+                    border-color: var(--primaryColor);
+                    background-color: var(--primaryColor);
+                }
+            }
+            .form-check-label {
+                cursor: pointer;
+                letter-spacing: 0.05em;
+                color: var(--paragraphColor);
+            }
+        }
+        .default-btn {
+            display: block;
+            width: 100%;
+
+            i {
+                right: auto;
+                margin: {
+                    left: 10px;
+                    top: 1px;
+                };
+            }
+        }
+        p {
+            margin-top: 20px;
+            font: {
+                size: 15px;
+                style: italic;
+            };
+        }
+    }
+}
+.profileAuthenticationModal {
+    .modal-dialog {
+        max-width: 675px;
+
+        .modal-content {
+            border: none;
+            display: block;
+            padding: 50px 25px;
+            border-radius: 8px;
+            flex-direction: unset;
+
+            .modal-header {
+                border: none;
+                padding: 0;
+            }
+        }
+        .btn-close {
+            top: 0;
+            right: -50px;
+            font-size: 20px;
+            position: absolute;
+            opacity: 1 !important;
+            color: var(--whiteColor);
+            box-shadow: unset !important;
+            transition: var(--transition);
+            background-color: transparent;
+            filter: invert(1);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Profile Authentication Area CSS
+    .profile-authentication-tabs {
+        max-width: 100%;
+        
+        .nav {
+            &.nav-tabs {
+                margin-bottom: 20px;
+
+                .nav-item {
+                    margin: {
+                        left: 8px;
+                        right: 8px;
+                    };
+                    .nav-link {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        form {
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    font-size: 15px;
+                    left: 15px;
+                    top: 15px;
+                }
+                .form-control {
+                    height: 50px;
+                    padding-left: 43px;
+                    border-radius: 5px;
+
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+                textarea.form-control {
+                    height: auto;
+                    padding-top: 15px;
+                }
+            }
+            .form-check {
+                margin-bottom: 15px;
+
+                .form-check-input {
+                    margin-top: 0.15em;
+                }
+            }
+            p {
+                margin-top: 15px;
+                font-size: 14px;
+            }
+        }
+    }
+    .profileAuthenticationModal {
+        .modal-dialog {
+            max-width: 540px;
+    
+            .modal-content {
+                padding: 25px 15px;
+                border-radius: 5px;
+            }
+            .btn-close {
+                right: 0;
+                top: -35px;
+                font-size: 17px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Profile Authentication Area CSS
+    .profileAuthenticationModal {
+        .modal-dialog {
+            .modal-content {
+                padding: 30px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Profile Authentication Area CSS
+    .profile-authentication-tabs {
+        .nav {
+            &.nav-tabs {
+                margin-bottom: 25px;
+
+                .nav-item {
+                    margin: {
+                        left: 12px;
+                        right: 12px;
+                    };
+                    .nav-link {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .profileAuthenticationModal {
+        .modal-dialog {
+            max-width: 630px;
+    
+            .modal-content {
+                padding: 50px 20px;
+            }
+            .btn-close {
+                right: -45px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Profile Authentication Area CSS
+    .profile-authentication-tabs {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    margin: {
+                        left: 17px;
+                        right: 17px;
+                    };
+                    .nav-link {
+                        font-size: 27px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

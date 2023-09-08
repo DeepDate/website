@@ -1,0 +1,447 @@
+// Banner Area CSS
+.brt-banner-area {
+    background-color: #121111;
+    overflow: hidden;
+    padding: {
+        top: 240px;
+        bottom: 75px;
+    };
+    .container-fluid {
+        padding: {
+            left: 30px;
+            right: 30px;
+        };
+    }
+    &::after {
+        top: 7%;
+        right: -1%;
+        z-index: -1;
+        content: '';
+        width: 270px;
+        height: 270px;
+        position: absolute;
+        filter: blur(112px);
+        border-radius: 360px;
+        background: rgba(249, 196, 42, 0.5);
+    }
+    &::before {
+        right: 30%;
+        bottom: 13%;
+        z-index: -1;
+        content: '';
+        width: 270px;
+        height: 270px;
+        position: absolute;
+        filter: blur(112px);
+        border-radius: 360px;
+        background: rgba(249, 196, 42, 0.5);
+    }
+}
+.brt-banner-content {
+    h1 {
+        color: var(--whiteColor);
+        letter-spacing: normal;
+        margin-bottom: 15px;
+        font-size: 70px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+    p {
+        color: #c4c4c4;
+        max-width: 810px;
+    }
+    .upload-btn {
+        margin: {
+            top: 30px;
+            bottom: 30px;
+        };
+        input[type="file"] {
+            display: none;
+        }
+        .custom-file-upload {
+            z-index: 1;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            border-radius: 30px;
+            display: inline-block;
+            letter-spacing: 0.04em;
+            color: var(--whiteColor);
+            transition: var(--transition);
+            background: var(--warningGradientColor);
+            padding: {
+                top: 17px;
+                left: 35px;
+                right: 65px;
+                bottom: 17px;
+            };
+            font: {
+                size: var(--fontSize);
+                weight: 500;
+            };
+            &::before {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                z-index: -1;
+                position: absolute;
+                border-radius: 30px;
+                transition: var(--transition);
+                background: var(--primaryGradientColor)
+            }
+            i {
+                transform: translateY(-50%);
+                position: absolute;
+                margin-top: 2px;
+                font-size: 20px;
+                line-height: 1;
+                right: 35px;
+                top: 50%;
+            }
+            &:hover {
+                color: var(--whiteColor);
+
+                &::before {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    .try-images {
+        p {
+            font-size: 15px;
+            max-width: 100%;
+            line-height: 1.6;
+            margin: {
+                bottom: 0;
+                right: 20px;
+            };
+            span {
+                display: block;
+            }
+        }
+        img {
+            border-radius: 8px;
+            margin-right: 10px;
+            width: 45px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+.brt-banner-image {
+    text-align: center;
+    position: relative;
+    margin: {
+        left: 100px;
+    };
+    .top {
+        top: -6%;
+        left: -13%;
+        position: absolute;
+        pointer-events: none;
+    }
+}
+.brt-banner-brands-list {
+    margin-top: 100px;
+
+    h5 {
+        color: var(--whiteColor);
+        margin-bottom: 25px;
+        font: {
+            weight: 600;
+            size: 16px;
+        };
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Banner Area CSS
+    .brt-banner-area {
+        padding: {
+            top: 200px;
+            bottom: 35px;
+        };
+        .container-fluid {
+            padding: {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            };
+        }
+    }
+    .brt-banner-content {
+        h1 {
+            margin-bottom: 12px;
+            line-height: 1.4;
+            font-size: 26px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .upload-btn {
+            margin: {
+                top: 15px;
+                bottom: 20px;
+            };
+            .custom-file-upload {
+                font-size: 14px;
+                padding: {
+                    top: 14px;
+                    left: 25px;
+                    right: 47px;
+                    bottom: 14px;
+                };
+                i {
+                    right: 25px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .try-images {
+            p {
+                top: 1.5px;
+                font-size: 13px;
+                margin-right: 10px;
+                position: relative;
+            }
+            img {
+                width: 40px;
+                margin-right: 8px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .brt-banner-image {
+        margin: {
+            left: 0;
+            top: 30px;
+        };
+        .top {
+            display: none;
+        }
+    }
+    .brt-banner-brands-list {
+        margin-top: 30px;
+
+        h5 {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Banner Area CSS
+    .brt-banner-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Banner Area CSS
+    .brt-banner-area {
+        padding: {
+            top: 200px;
+            bottom: 55px;
+        };
+        .container-fluid {
+            max-width: 720px;
+            padding: {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            };
+        }
+    }
+    .brt-banner-content {
+        h1 {
+            margin-bottom: 12px;
+            line-height: 1.4;
+            font-size: 35px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .upload-btn {
+            margin: {
+                top: 20px;
+                bottom: 25px;
+            };
+            .custom-file-upload {
+                font-size: 15px;
+                padding: {
+                    top: 15px;
+                    left: 30px;
+                    right: 55px;
+                    bottom: 15px;
+                };
+                i {
+                    right: 30px;
+                    margin-top: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+        .try-images {
+            p {
+                top: 1.5px;
+                font-size: 14px;
+                position: relative;
+            }
+        }
+    }
+    .brt-banner-image {
+        margin: {
+            left: 0;
+            top: 30px;
+        };
+        .top {
+            display: none;
+        }
+    }
+    .brt-banner-brands-list {
+        margin-top: 30px;
+
+        h5 {
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Banner Area CSS
+    .brt-banner-area {
+        .container-fluid {
+            max-width: 960px;
+            padding: {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            };
+        }
+        .shapes {
+            display: none;
+        }
+    }
+    .brt-banner-content {
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .upload-btn {
+            margin: {
+                top: 20px;
+                bottom: 25px;
+            };
+            .custom-file-upload {
+                font-size: 15px;
+                padding: {
+                    top: 16px;
+                    left: 30px;
+                    right: 60px;
+                    bottom: 16px;
+                };
+                i {
+                    right: 30px;
+                }
+            }
+        }
+    }
+    .brt-banner-image {
+        margin-left: 25px;
+
+        .top {
+            top: -6%;
+            left: -8%;
+            width: 70px;
+        }
+    }
+    .brt-banner-brands-list {
+        h5 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Banner Area CSS
+    .brt-banner-content {
+        h1 {
+            font-size: 55px;
+        }
+        p {
+            max-width: 100%;
+        }
+    }
+    .brt-banner-image {
+        margin-left: 40px;
+    }
+    .brt-banner-brands-list {
+        h5 {
+            font-size: 15px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Banner Area CSS
+    .brt-banner-area {
+        .container-fluid {
+            max-width: 1920px;
+            padding: {
+                left: 100px;
+                right: 100px;
+            };
+        }
+        &::after {
+            top: 7%;
+            right: -1%;
+        }
+        &::before {
+            right: 30%;
+            bottom: 13%;
+        }
+    }
+    .brt-banner-content {
+        h1 {
+            font-size: 80px;
+        }
+        p {
+            max-width: 810px;
+        }
+    }
+    .brt-banner-image {
+        margin-left: 220px;
+    }
+
+}

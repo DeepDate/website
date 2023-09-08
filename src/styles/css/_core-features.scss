@@ -1,0 +1,327 @@
+// Core Features Area CSS
+.core-features-area {
+    .shapes {
+        .shape12 {
+            right: 5%;
+        }
+    }
+}
+.core-features-images {
+    text-align: center;
+    padding-right: 100px;
+
+    img {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+        &.active2 {
+            display: block;
+        }
+        &.active3 {
+            display: block;
+        }
+        &.active4 {
+            display: block;
+        }
+    }
+}
+.core-features-content {
+    padding-left: 10px;
+
+    .sub-title {
+        background: var(--primaryGradientColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+        display: inline-block;
+        font: {
+            weight: 500;
+            size: 15px;
+        };
+    }
+    h2 {
+        font-size: 46px;
+        margin-bottom: 15px;
+        letter-spacing: normal;
+
+        span {
+            font-weight: 700;
+
+            &:nth-child(1) {
+                &:hover {
+                    background: var(--secondarGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            &:nth-child(2) {
+                &:hover {
+                    background: var(--primaryGradientColor);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+    p {
+        max-width: 550px;
+    }
+    .sub-heading {
+        font: {
+            size: 20px;
+            weight: 700;
+        };
+        margin: {
+            top: 35px;
+            bottom: 18px;
+        };
+    }
+    .core-features-list {
+        max-width: 550px;
+
+        .react-tabs__tab-list {
+            display: flex;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+            justify-content: space-between;
+            border: none;
+
+            .react-tabs__tab {
+                line-height: 1;
+                font-size: 86px;
+                color: rgba(12, 11, 11, 0.1);
+                border: none;
+
+                &:nth-child(1), &:nth-child(4) {
+                    &:hover, &.react-tabs__tab--selected {
+                        background: var(--secondarGradientColor);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 700;
+                    }
+                }
+                &:nth-child(2) {
+                    &:hover, &.react-tabs__tab--selected {
+                        background: var(--primaryGradientColor);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 700;
+                    }
+                }
+                &:nth-child(3) {
+                    &:hover, &.react-tabs__tab--selected {
+                        background: var(--warningGradientColor);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .react-tabs__tab-panel {
+            margin-top: 25px;
+    
+            h4 {
+                margin-bottom: 12px;
+                font: {
+                    size: 20px;
+                    weight: 600;
+                };
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Core Features Area CSS
+    .core-features-images {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+    .core-features-content {
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .sub-heading {
+            font-size: 15px;
+            margin: {
+                top: 15px;
+                bottom: 15px;
+            };
+        }
+        .core-features-list {
+            max-width: 100%;
+
+            .react-tabs__tab-list {
+                .react-tabs__tab {
+                    font-size: 40px;
+                }
+            }
+            .react-tabs__tab-panel {
+                margin-top: 20px;
+
+                h4 {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Core Features Area CSS
+    .core-features-images {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+    .core-features-content {
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .sub-heading {
+            font-size: 17px;
+            margin: {
+                top: 20px;
+                bottom: 15px;
+            };
+        }
+        .core-features-list {
+            max-width: 100%;
+
+            .react-tabs__tab-list {
+                .react-tabs__tab {
+                    font-size: 60px;
+                }
+            }
+            .react-tabs__tab-panel {
+                margin-top: 20px;
+
+                h4 {
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Core Features Area CSS
+    .core-features-images {
+        padding-right: 0;
+    }
+    .core-features-content {
+        padding-left: 10px;
+
+        .sub-title {
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 37px;
+            margin-bottom: 15px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .sub-heading {
+            font-size: 18px;
+            margin: {
+                top: 25px;
+                bottom: 15px;
+            };
+        }
+        .core-features-list {
+            max-width: 100%;
+
+            .react-tabs__tab-list {
+                .react-tabs__tab {
+                    font-size: 65px;
+                }
+            }
+            .react-tabs__tab-panel {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Core Features Area CSS
+    .core-features-images {
+        padding-right: 50px;
+    }
+    .core-features-content {
+        h2 {
+            font-size: 45px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .core-features-list {
+            max-width: 100%;
+
+            .react-tabs__tab-list {
+                .react-tabs__tab {
+                    font-size: 75px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Core Features Area CSS
+    .core-features-area {
+        .shapes {
+            .shape12 {
+                right: 10%;
+            }
+        }
+    }
+
+}

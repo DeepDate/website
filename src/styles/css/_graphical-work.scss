@@ -1,0 +1,137 @@
+// Graphical Work Area CSS
+.single-graphical-work-box {
+    img {
+        margin-bottom: 20px;
+    }
+    h4 {
+        font: {
+            weight: 600;
+            size: 20px;
+        };
+    }
+}
+.graphicalWorkSwiper {
+    .swiper-button-prev, .swiper-button-next {
+        width: 45px;
+        height: 45px;
+        line-height: 50px;
+        border: none;
+        text-align: center;
+        border-radius: 50%;
+        color: var(--whiteColor);
+        transform: translateY(-50%);
+        transition: var(--transition);
+        background: var(--primaryGradientColor);
+ 
+        &::after {
+            font-size: 25px;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Graphical Work Area CSS
+    .graphical-work-area {
+        padding-bottom: 0 !important;
+    }
+    .single-graphical-work-box {
+        img {
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 15px;
+        }
+    }
+    .graphicalWorkSwiper {
+        margin-bottom: -5px;
+
+        .swiper-button-prev, .swiper-button-next {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Graphical Work Area CSS
+    .graphical-work-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Graphical Work Area CSS
+    .graphical-work-area {
+        .container-fluid {
+            max-width: 720px;
+        }
+    }
+    .single-graphical-work-box {
+        img {
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 17px;
+        }
+    }
+    .graphicalWorkSwiper {
+        margin-bottom: -5px;
+
+        .swiper-button-prev, .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            background-color: #f5f5f5;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Graphical Work Area CSS
+    .graphical-work-area {
+        .container-fluid {
+            max-width: 960px;
+        }
+    }
+    .single-graphical-work-box {
+        h4 {
+            font-size: 18px;
+        }
+    }
+    .graphicalWorkSwiper {
+        margin-bottom: -5px;
+
+        .swiper-button-prev, .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            background-color: #f5f5f5;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Graphical Work Area CSS
+    .graphical-work-area {
+        .container-fluid {
+            max-width: 1920px;
+        }
+    }
+
+}

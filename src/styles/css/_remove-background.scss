@@ -1,0 +1,301 @@
+// Remove Background Area CSS
+.remove-background-area {
+    &.bg-half-color {
+        &::before {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            content: '';
+            height: 50%;
+            position: absolute;
+            background-color: #252029;
+        }
+        &::after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -2;
+            content: '';
+            height: 587px;
+            position: absolute;
+            filter: blur(150px);
+            background: linear-gradient(135deg, rgba(0, 128, 239, 0.3) 0%, rgba(0, 214, 218, 0.3) 100%);
+        }
+    }
+}
+.remove-background-inner-box {
+    background: linear-gradient(135deg, rgba(0, 128, 239, 0.1) 0%, rgba(0, 214, 218, 0.1) 100%);
+    border-radius: 20px;
+    padding: {
+        left: 30px;
+        right: 30px;
+    };
+    .section-title {
+        p {
+            font-size: 15px;
+
+            span {
+                display: block;
+                color: #464646;
+                font: {
+                    weight: 600;
+                    size: var(--fontSize);
+                };
+            }
+        }
+        .upload-btn {
+            margin: {
+                top: 30px;
+                bottom: 30px;
+            };
+            input[type="file"] {
+                display: none;
+            }
+            .custom-file-upload {
+                z-index: 1;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                border-radius: 30px;
+                display: inline-block;
+                letter-spacing: 0.04em;
+                color: var(--whiteColor);
+                transition: var(--transition);
+                background: var(--warningGradientColor);
+                padding: {
+                    top: 17px;
+                    left: 35px;
+                    right: 65px;
+                    bottom: 17px;
+                };
+                font: {
+                    size: var(--fontSize);
+                    weight: 500;
+                };
+                &::before {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    border-radius: 30px;
+                    transition: var(--transition);
+                    background: var(--primaryGradientColor)
+                }
+                i {
+                    transform: translateY(-50%);
+                    position: absolute;
+                    margin-top: 2px;
+                    font-size: 20px;
+                    line-height: 1;
+                    right: 35px;
+                    top: 50%;
+                }
+                &:hover {
+                    color: var(--whiteColor);
+
+                    &::before {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+    .images-list {
+        img {
+            pointer-events: none;
+            position: absolute;
+            z-index: -1;
+
+            &:nth-child(1) {
+                filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.15));
+                border-radius: 15px;
+                left: 3.5%;
+                top: 14%;
+            }
+            &:nth-child(2) {
+                left: 17%;
+                bottom: 17%;
+                border-radius: 10px;
+                filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+            }
+            &:nth-child(3) {
+                right: 16%;
+                bottom: 17%;
+                border-radius: 15px;
+                filter: drop-shadow(0px 7px 24px rgba(0, 0, 0, 0.2));
+            }
+            &:nth-child(4) {
+                filter: drop-shadow(0px 5px 44px rgba(0, 0, 0, 0.15));
+                border-radius: 15px;
+                right: 7%;
+                top: 10%;
+            }
+        }
+    }
+    &.bg-color2 {
+        background: var(--secondarGradientColor);
+
+        .section-title {
+            .sub-title {
+                background:transparent;
+                color: var(--whiteColor);
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: unset;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Remove Background Area CSS
+    .remove-background-inner-box {
+        border-radius: 10px;
+        padding: {
+            left: 15px;
+            right: 15px;
+        };
+        .section-title {
+            p {
+                font-size: 13px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+            .upload-btn {
+                margin: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .custom-file-upload {
+                    font-size: 14px;
+                    padding: {
+                        top: 14px;
+                        left: 25px;
+                        right: 47px;
+                        bottom: 14px;
+                    };
+                    i {
+                        right: 25px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .images-list {
+            img {
+                display: none;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Remove Background Area CSS
+    .remove-background-inner-box {
+        padding: {
+            left: 25px;
+            right: 25px;
+        };
+        .section-title {
+            p {
+                font-size: 14px;
+
+                span {
+                    font-size: 15px;
+                }
+            }
+            .upload-btn {
+                margin: {
+                    top: 20px;
+                    bottom: 15px;
+                };
+                .custom-file-upload {
+                    font-size: 15px;
+                    padding: {
+                        top: 15px;
+                        left: 30px;
+                        right: 55px;
+                        bottom: 15px;
+                    };
+                    i {
+                        right: 30px;
+                        margin-top: 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .images-list {
+            img {
+                &:nth-child(1) {
+                    width: 65px;
+                    left: 2%;
+                    top: 4%;
+                }
+                &:nth-child(2) {
+                    left: 10%;
+                    bottom: 17%;
+                }
+                &:nth-child(3) {
+                    right: 8%;
+                    bottom: 17%;
+                }
+                &:nth-child(4) {
+                    width: 65px;
+                    right: 2%;
+                    top: 4%;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Remove Background Area CSS
+    .remove-background-inner-box {
+        .section-title {
+            .upload-btn {
+                margin: {
+                    top: 20px;
+                    bottom: 20px;
+                };
+                .custom-file-upload {
+                    font-size: 15px;
+                    padding: {
+                        top: 16px;
+                        left: 30px;
+                        right: 60px;
+                        bottom: 16px;
+                    };
+                    i {
+                        right: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

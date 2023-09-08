@@ -1,0 +1,43 @@
+{
+  "trustedBrands": {
+		"title": "Trusted by 1000+ global brands",
+
+    "brands": [
+      { 
+        "id": 1, 
+        "brandImg": "../../images/trusted-brands/brand1.png",
+        "aosDelay": "100"
+      },
+      { 
+        "id": 2, 
+        "brandImg": "../../images/trusted-brands/brand2.png",
+        "aosDelay": "200"
+      },
+      { 
+        "id": 3, 
+        "brandImg": "../../images/trusted-brands/brand3.png",
+        "aosDelay": "300"
+      },
+      { 
+        "id": 4, 
+        "brandImg": "../../images/trusted-brands/brand4.png",
+        "aosDelay": "400"
+      },
+      { 
+        "id": 5, 
+        "brandImg": "../../images/trusted-brands/brand5.png",
+        "aosDelay": "500"
+      },
+      { 
+        "id": 6, 
+        "brandImg": "../../images/trusted-brands/brand6.png",
+        "aosDelay": "600"
+      },
+      { 
+        "id": 7, 
+        "brandImg": "../../images/trusted-brands/brand7.png",
+        "aosDelay": "700"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "whyChooseUs": {
+    "subTitle": "Why Timo",
+    "title": "Purpose - built solutions for every product need",
+    "shortDescription": "3D opens a new door for creativity. A solid set of features that will help you create your best designs.",
+    "whyChooseUsImg1": "../../images/why-choose-us/why-choose-us1.jpg",
+    "whyChooseUsImg2": "../../images/why-choose-us/why-choose-us2.jpg",
+    "whyChooseUsImg3": "../../images/why-choose-us/why-choose-us3.png",
+
+    "features": [
+      {
+        "id": 1,
+        "title": "Easy Automation",
+        "text": "Work with your team in real-time and set individual permissions. 3D opens a new door for creativity."
+      },
+      {
+        "id": 2,
+        "title": "Easy To Use",
+        "text": "Work with your team in real-time and set individual permissions. 3D opens a new door for creativity."
+      },
+      {
+        "id": 3,
+        "title": "Team Collaboration",
+        "text": "Work with your team in real-time and set individual permissions. 3D opens a new door for creativity."
+      },
+      {
+        "id": 4,
+        "title": "Browser Based",
+        "text": "Work with your team in real-time and set individual permissions. 3D opens a new door for creativity."
+      }
+    ]
+  }
+}

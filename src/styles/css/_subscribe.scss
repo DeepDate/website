@@ -1,0 +1,221 @@
+// Subscribe Area CSS
+.subscribe-inner-box {
+    border-radius: 30px;
+    padding: {
+        left: 80px;
+        right: 60px;
+    };
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        border-radius: 30px;
+        background: var(--warningGradientColor);
+    }
+    .content {
+        h2 {
+            font-size: 46px;
+            margin-bottom: 15px;
+    
+            span {
+                font-weight: 700;
+    
+                &:nth-child(1) {
+                    &:hover {
+                        background: var(--secondarGradientColor);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                &:nth-child(2) {
+                    &:hover {
+                        background: var(--primaryGradientColor);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    form {
+        padding-left: 100px;
+
+        .input-newsletter {
+            background-color: var(--whiteColor);
+            color: var(--blackColor);
+            letter-spacing: 0.05em;
+            border-radius: 8px;
+            display: block;
+            height: 60px;
+            border: none;
+            width: 100%;
+            padding: {
+                left: 20px;
+                top: 5px;
+            };
+            &::placeholder {
+                color: #888888;
+                font-weight: 300;
+                transition: var(--transition);
+            }
+            &:focus {
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+        .default-btn {
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+
+            i {
+                right: auto;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Subscribe Area CSS
+    .subscribe-inner-box {
+        border-radius: 10px;
+        padding: {
+            left: 15px;
+            right: 15px;
+        };
+        &::before {
+            border-radius: 10px;
+        }
+        .content {
+            h2 {
+                font-size: 23px;
+                margin-bottom: 8px;
+            }
+        }
+        form {
+            padding-left: 0;
+            margin-top: 20px;
+
+            .input-newsletter {
+                height: 50px;
+                padding: {
+                    left: 15px;
+                    top: 5px;
+                };
+            }
+            .default-btn {
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Subscribe Area CSS
+    .subscribe-inner-box {
+        padding: {
+            left: 25px;
+            right: 25px;
+        };
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Subscribe Area CSS
+    .subscribe-inner-box {
+        border-radius: 20px;
+        padding: {
+            left: 40px;
+            right: 40px;
+        };
+        &::before {
+            border-radius: 20px;
+        }
+        .content {
+            h2 {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+        }
+        form {
+            padding-left: 0;
+            margin-top: 20px;
+
+            .input-newsletter {
+                height: 53px;
+                padding: {
+                    left: 15px;
+                    top: 5px;
+                };
+            }
+            .default-btn {
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Subscribe Area CSS
+    .subscribe-inner-box {
+        padding: {
+            left: 50px;
+            right: 50px;
+        };
+        .content {
+            h2 {
+                font-size: 40px;
+            }
+        }
+        form {
+            padding-left: 30px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Subscribe Area CSS
+    .subscribe-inner-box {
+        padding: {
+            left: 50px;
+            right: 50px;
+        };
+        .content {
+            h2 {
+                font-size: 45px;
+            }
+        }
+        form {
+            padding-left: 50px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

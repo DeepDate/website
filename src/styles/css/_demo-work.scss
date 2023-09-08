@@ -1,0 +1,117 @@
+// Demo Work Area CSS
+.demo-work-area {
+    .row {
+        margin-top: -25px;
+
+        .col {
+            flex: 0 0 auto;
+            width: 14.2857142857%;
+        }
+    }
+    .image {
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Demo Work Area CSS
+    .demo-work-area {
+        .row {
+            .col {
+                width: 33.333333%;
+            }
+        }
+        .image {
+            border-radius: 5px;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Demo Work Area CSS
+    .demo-work-area {
+        &.bg-half-color {
+            &::before {
+                height: 14%;
+            }
+        }
+        .row {
+            .col {
+                width: 25%;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Demo Work Area CSS
+    .demo-work-area {
+        &.bg-half-color {
+            &::before {
+                height: 15%;
+            }
+        }
+        .image {
+            border-radius: 5px;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Demo Work Area CSS
+    .demo-work-area {
+        &.bg-half-color {
+            &::before {
+                height: 14%;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Demo Work Area CSS
+    .demo-work-area {
+        &.bg-half-color {
+            &::before {
+                height: 16%;
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

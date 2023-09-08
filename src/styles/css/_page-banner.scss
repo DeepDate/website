@@ -1,0 +1,227 @@
+// Page Banner Area CSS
+.page-banner-area {
+    margin-top: 130px;
+    padding: {
+        top: 100px;
+        bottom: 100px;
+    };
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        z-index: -1;
+        position: absolute;
+        border-radius: 30px;
+        background-color: #f6f5f0;
+        margin: {
+            left: 25px;
+            right: 25px;
+        };
+    }
+    .shapes {
+        .shape1 {
+            right: auto;
+            bottom: -5%;
+            left: 8%;
+        }
+        .shape8 {
+            top: 20%;
+            right: 9%;
+            width: 90px;
+        }
+    }
+}
+.page-banner-content {
+    max-width: 720px;
+    text-align: center;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    h1 {
+        font-size: 40px;
+        margin-bottom: 12px;
+        font-weight: 700;
+    }
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+
+        li {
+            position: relative;
+            display: inline-block;
+            letter-spacing: 0.05em;
+            color: var(--paragraphColor);
+            margin: {
+                left: 15px;
+                right: 15px;
+            };
+            a {
+                font-weight: 500;
+            }
+            &::before, &::after {
+                top: 50%;
+                width: 1px;
+                content: '';
+                right: -19px;
+                height: 12px;
+                position: absolute;
+                background-color: var(--paragraphColor);
+                transform: translateY(-50%) rotate(25deg);
+            }
+            &::after {
+                right: -12px;
+            }
+            &:last-child {
+                margin-right: 0;
+
+                &::before, &::after {
+                    display: none;
+                }
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    img {
+        margin-bottom: 40px;
+    }
+    h4 {
+        margin-bottom: 15px;
+        font: {
+            size: 22px;
+            weight: 600;
+        };
+    }
+    .default-btn {
+        margin-top: 15px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Page Banner Area CSS
+    .page-banner-area {
+        margin-top: 80px;
+        padding: {
+            top: 50px;
+            bottom: 50px;
+        };
+        &::before {
+            border-radius: 10px;
+            margin: {
+                left: 10px;
+                right: 10px;
+            };
+        }
+    }
+    .page-banner-content {
+        max-width: 100%;
+        
+        h1 {
+            font-size: 24px;
+        }
+        img {
+            margin-bottom: 25px;
+        }
+        h4 {
+            font-size: 17px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Page Banner Area CSS
+    .page-banner-area {
+        margin-top: 90px;
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+        &::before {
+            border-radius: 20px;
+            margin: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .page-banner-content {
+        max-width: 100%;
+        
+        h1 {
+            font-size: 30px;
+        }
+        img {
+            margin-bottom: 25px;
+        }
+        h4 {
+            font-size: 19px;
+        }
+        .default-btn {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Page Banner Area CSS
+    .page-banner-area {
+        margin-top: 110px;
+        
+        &::before {
+            border-radius: 20px;
+            margin: {
+                left: 20px;
+                right: 20px;
+            };
+        }
+    }
+    .page-banner-content {
+        max-width: 720px;
+        
+        h1 {
+            font-size: 37px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    // Page Banner Area CSS
+    .page-banner-area {
+        .shapes {
+            .shape1 {
+                bottom: -5%;
+                left: 16%;
+            }
+            .shape8 {
+                top: 20%;
+                right: 11%;
+            }
+        }
+    }
+
+}
