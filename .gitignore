@@ -3,7 +3,8 @@ logs
 *.log
 
 #Ignore Image Folder (Temporary)
-src/images/
+# src/images/
+
 
 # Runtime data
 pids

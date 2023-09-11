@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/_App/layout";
 import Seo from "../components/_App/seo";
-import NavbarStyleThree from "../components/_App/NavbarStyleThree";
+// import NavbarStyleThree from "../components/_App/NavbarStyleThree";
 import HeroBanner from "../components/ImageInhancer/HeroBanner";
 import HowItWorks from "../components/ImageInhancer/HowItWorks";
 import WhomItsFor from "../components/ImageInhancer/WhomItsFor";
