@@ -5,7 +5,6 @@ import NavbarStyleThree from "../components/_App/NavbarStyleThree";
 import HeroBanner from "../components/ImageInhancer/HeroBanner";
 import HowItWorks from "../components/ImageInhancer/HowItWorks";
 import WhomItsFor from "../components/ImageInhancer/WhomItsFor";
-// import WhyChooseUsTwo from "../components/ImageInhancer/WhyChooseUsTwo"
 import TestimonialStyle3 from "../components/Testimonials/TestimonialStyle3";
 import Footer from "../components/_App/Footer";
 
