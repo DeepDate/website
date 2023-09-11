@@ -64,12 +64,9 @@ const Footer = () => {
                   <img src={whiteLogo} alt="White Logo" />
                 </Link>
 
-                <p>
-                  One Stop solution to all compliance procedures and sanction
-                  screening.
-                </p>
+                <p>Dating powered by AI, let's live in the future!</p>
 
-                <ul className="social-links">
+                {/* <ul className="social-links">
                   {socialLinks &&
                     socialLinks.map((value, i) => (
                       <li key={i}>
@@ -78,10 +75,10 @@ const Footer = () => {
                         </a>
                       </li>
                     ))}
-                </ul>
+                </ul> */}
               </div>
             </Col>
-
+            {/* 
             <Col
               lg={3}
               md={6}
@@ -102,7 +99,7 @@ const Footer = () => {
                     ))}
                 </ul>
               </div>
-            </Col>
+            </Col> */}
 
             <Col
               lg={3}
@@ -117,20 +114,21 @@ const Footer = () => {
                 <h4>Contact Us</h4>
                 <ul className="footer-contact-info">
                   <li>
-                    <span>Address:</span> unit 14/663 Victoria St, Abbotsford VIC 3067
+                    <span>Address:</span> unit 14/663 Victoria St, Abbotsford
+                    VIC 3067
                   </li>
                   <li>
                     <span>Email:</span>{" "}
-                    <a href="mailto:hello@amlcloud.io">hello@amlcloud.io</a>
+                    <a href="mailto:admin@deepdate.app">admin@deepdate.app</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <span>Phone:</span>{" "}
                     <a href="tel:+14854560102">+1-485-456-0102</a>
                   </li>
                   <li>
                     <span>Fax:</span>{" "}
                     <a href="tel:+107854578964">+1-0785 4578964</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </Col>
@@ -166,7 +164,7 @@ const Footer = () => {
       <div className="copyright-area">
         <Container>
           <p>
-            © <span>AMLCloud Pty. Ltd. 2022.</span> All right reserved.{" "}
+            © <span>DeepDate App.</span> All right reserved.{" "}
             {/* <a href="https://envytheme.com/" target="_blank" rel="noreferrer">
               EnvyTheme
             </a> */}

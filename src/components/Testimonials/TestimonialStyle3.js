@@ -23,7 +23,7 @@ const TestimonialStyle3 = () => {
             >
               <span className="sub-title">Testimonials</span>
               <h2>
-                What <span>Our Customers</span> Say About Us
+                What <span>Users</span> Say About Us
               </h2>
             </div>
 
@@ -46,52 +46,45 @@ const TestimonialStyle3 = () => {
               >
                 <SwiperSlide>
                   <p>
-                    "AML Cloud's product has revolutionized the way we approach
-                    anti-money laundering. The platform's advanced analytics and
-                    machine learning capabilities have allowed us to detect
-                    suspicious activity more efficiently than ever before."
+                    "DeepDate has fundamentally changed the way I approach
+                    dating. Seeing AI chat bots simulating a conversation based
+                    on my interests and personality traits gave me a sneak peek
+                    into how a conversation with a match would unfold in real
+                    life. It's been a game-changer!"
                   </p>
                   <div className="info">
-                    <h4>Sameer</h4>
-                    <span>SME Expert</span>
+                    <h4>Simone</h4>
+                    <span>34</span>
                   </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <p>
-                    "The flexibility of AML Cloud's product is unmatched. We can
-                    easily customize the platform to fit our specific needs and
-                    workflows, which has saved us a significant amount of time
-                    and resources."
+                    "What sets DeepDate apart is the genuine connections it
+                    fosters. Being able to observe AI-driven conversations drawn
+                    from my own interests and preferences has allowed me to find
+                    matches with whom I share deep commonalities. It's not just
+                    another dating app; it's a pathway to meaningful
+                    relationships."
                   </p>
                   <div className="info">
-                    <h4>Jenny</h4>
-                    <span> SME Expert</span>
+                    <h4>Derrick</h4>
+                    <span>27</span>
                   </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                   <p>
-                    “AML Cloud's product offers a comprehensive suite of
-                    features and functionalities that cover all aspects of
-                    anti-money laundering, making it an invaluable tool for any
-                    organization in the financial industry.”
+                    “DeepDate App has revolutionized the way I date. It's like
+                    having a helping hand guiding you to your perfect match. The
+                    AI chat bots feel so real, and it's exciting to see
+                    conversations unfold naturally. I found my current partner
+                    through DeepDate, and our initial bot conversation was
+                    surprisingly close to our real-life dynamics!”
                   </p>
                   <div className="info">
-                    <h4>Arnold</h4>
-                    <span>SME Expert</span>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <p>
-                    “The user interface of AML Cloud's product is intuitive and
-                    user-friendly, making it easy for teams to navigate and
-                    utilize the platform effectively."
-                  </p>
-                  <div className="info">
-                    <h4>Bob</h4>
-                    <span>SME Expert</span>
+                    <h4>Li</h4>
+                    <span>31</span>
                   </div>
                 </SwiperSlide>
               </Swiper>

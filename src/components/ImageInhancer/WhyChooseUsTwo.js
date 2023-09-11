@@ -1,12 +1,12 @@
-import * as React from "react"
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import * as React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import icon1 from "../../images/why-choose-us/icon1.png"
-import icon2 from "../../images/why-choose-us/icon2.png"
-import icon3 from "../../images/why-choose-us/icon3.png"
-import icon4 from "../../images/why-choose-us/icon4.png"
+import icon1 from "../../images/why-choose-us/icon1.png";
+import icon2 from "../../images/why-choose-us/icon2.png";
+import icon3 from "../../images/why-choose-us/icon3.png";
+import icon4 from "../../images/why-choose-us/icon4.png";
 
 const WhyChooseUsTwo = () => {
   return (
@@ -98,7 +98,7 @@ const WhyChooseUsTwo = () => {
         </Container>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default WhyChooseUsTwo
+export default WhyChooseUsTwo;

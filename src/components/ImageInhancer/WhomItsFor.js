@@ -25,7 +25,7 @@ const WhomItsFor = () => {
           >
             <span className="sub-title">How It Works</span>
             <h2>
-              Why Choose <span>Us</span>?
+              Perfect synergy of you and&nbsp;<span>Your Avatar</span>
             </h2>
             {/* <p>
               You’re busy, so we’ll make this easy. Timo is constantly growing
@@ -44,13 +44,15 @@ const WhomItsFor = () => {
               >
                 {/* <span className="sub-title">Whom It's For</span> */}
                 <h2>
-                  Advance <span>Analytics</span> and{" "}
-                  <span>Machine Learning</span> capabilities.
+                  Let it be <span>Creative</span> and <span>Impress</span> your
+                  counterpart.
                 </h2>
                 <p>
-                  AML Cloud's product leverages advanced analytics and machine
-                  learning algorithms to detect and prevent suspicious activity
-                  more efficiently and accurately.
+                  Choose the level of creativity, wit and humour, and see how
+                  the conversation unfolds. It will not only be saving time, but
+                  also entertaining to watch. Think of it as your friend
+                  chatting on your behalf, with only exception that you can told
+                  her off and she wouldn't get upset.
                 </p>
 
                 <ul className="features-list">
@@ -58,19 +60,19 @@ const WhomItsFor = () => {
                     <div className="icon">
                       <img src={icon1} alt="icon" />
                     </div>
-                    Creative Professionals
+                    Spontaneous and witty
                   </li>
                   <li>
                     <div className="icon">
                       <img src={icon2} alt="icon" />
                     </div>
-                    Ecommerce
+                    Protects your privacy
                   </li>
                   <li>
                     <div className="icon">
                       <img src={icon3} alt="icon" />
                     </div>
-                    Real Estate
+                    Knows how to behave in the society
                   </li>
                 </ul>
               </div>
@@ -116,32 +118,31 @@ const WhomItsFor = () => {
               >
                 {/* <span className="sub-title">Whom It's For</span> */}
                 <h2>
-                  <span>Customiizeability</span> and <span>User-Friendly</span>
+                  No limits to <span>Matches</span> and <span>Chats</span>
                 </h2>
                 <p>
-                  The platform's capacity to get tailored as well its match to
-                  the user’s intuite and ease to use, makes it accessible to all
-                  team members regardless of technical expertise.
+                  Forget the bourdaries of existing dating apps. You get matched
+                  to everyone around. Conversations start and go on as long as
+                  you want. Without any pressure to reply or to meet...
                 </p>
-
                 <ul className="features-list">
                   <li>
                     <div className="icon">
                       <img src={icon1} alt="icon" />
                     </div>
-                    Creative Professionals
+                    Discover people by chats
                   </li>
                   <li>
                     <div className="icon">
                       <img src={icon2} alt="icon" />
                     </div>
-                    Ecommerce
+                    See who is better matching and why
                   </li>
                   <li>
                     <div className="icon">
                       <img src={icon3} alt="icon" />
                     </div>
-                    Real Estate
+                    Make decision to take over at any time
                   </li>
                 </ul>
               </div>
@@ -159,13 +160,13 @@ const WhomItsFor = () => {
               >
                 {/* <span className="sub-title">Whom It's For</span> */}
                 <h2>
-                  <span>Comprehensive Features</span>
+                  <span>Fair to you and others</span>
                 </h2>
                 <p>
-                  The platform’s ability to cover all aspects of anti-money
-                  laundering, ensuring that organizations in the financial
-                  industry are fully equipped to comply with regulations and
-                  mitigate risk.
+                  We are the first app to equalize the matchmarket! Everyone
+                  likes to be liked, but not everyone is equally attractive. We
+                  will make those who like you give back to you for your
+                  attention.
                 </p>
 
                 <ul className="features-list">
@@ -173,19 +174,19 @@ const WhomItsFor = () => {
                     <div className="icon">
                       <img src={icon1} alt="icon" />
                     </div>
-                    Creative Professionals
+                    No feeling of emptiness
                   </li>
                   <li>
                     <div className="icon">
                       <img src={icon2} alt="icon" />
                     </div>
-                    Ecommerce
+                    No feeling of being used
                   </li>
                   <li>
                     <div className="icon">
                       <img src={icon3} alt="icon" />
                     </div>
-                    Real Estate
+                    Easy to move on
                   </li>
                 </ul>
               </div>
@@ -202,62 +203,6 @@ const WhomItsFor = () => {
                 <img src={overviewImg1} alt="overview" />
                 <img src={overviewImg2} alt="overview" />
                 <img src={overviewImg3} alt="overview" />
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="align-items-center pb-100">
-            <Col lg={6} md={12}>
-              <div
-                className="overview-image text-white"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="200"
-                data-aos-once="false"
-              >
-                <img src={overviewImg1} alt="overview" />
-                <img src={overviewImg2} alt="overview" />
-                <img src={overviewImg3} alt="overview" />
-              </div>
-            </Col>
-
-            <Col lg={6} md={12}>
-              <div
-                className="overview-content text-white"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="100"
-                data-aos-once="false"
-              >
-                {/* <span className="sub-title">Whom It's For</span> */}
-                <h2>
-                  <span>Automation</span>
-                </h2>
-                <p>
-                  Our product offers a high degree of automation, streamlining
-                  compliance processes and improving overall efficiency.
-                </p>
-
-                <ul className="features-list">
-                  <li>
-                    <div className="icon">
-                      <img src={icon1} alt="icon" />
-                    </div>
-                    Creative Professionals
-                  </li>
-                  <li>
-                    <div className="icon">
-                      <img src={icon2} alt="icon" />
-                    </div>
-                    Ecommerce
-                  </li>
-                  <li>
-                    <div className="icon">
-                      <img src={icon3} alt="icon" />
-                    </div>
-                    Real Estate
-                  </li>
-                </ul>
               </div>
             </Col>
           </Row>

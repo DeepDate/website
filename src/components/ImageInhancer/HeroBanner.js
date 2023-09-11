@@ -1,20 +1,20 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import Container from "react-bootstrap/Container"
+import * as React from "react";
+import { Link } from "gatsby";
+import Container from "react-bootstrap/Container";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
-} from "react-compare-slider"
-import { Typewriter } from "react-simple-typewriter"
+} from "react-compare-slider";
+import { Typewriter } from "react-simple-typewriter";
 
-import bannerImg1 from "../../images/banner/banner16.jpg"
-import bannerImg2 from "../../images/banner/banner13.jpg"
-import bannerImg3 from "../../images/banner/banner14.jpg"
-import bannerImg4 from "../../images/banner/banner15.jpg"
-import textImg from "../../images/banner/text.png"
+import bannerImg1 from "../../images/banner/banner16.jpg";
+import bannerImg2 from "../../images/banner/banner13-1.jpg";
+import bannerImg3 from "../../images/banner/banner14.jpg";
+import bannerImg4 from "../../images/banner/banner15.jpg";
+import textImg from "../../images/banner/text.png";
 
-import shapeImg1 from "../../images/shape/shape10.png"
-import shapeImg2 from "../../images/shape/shape11.png"
+import shapeImg1 from "../../images/shape/shape10.png";
+import shapeImg2 from "../../images/shape/shape11.png";
 
 const HeroBanner = () => {
   return (
@@ -28,10 +28,16 @@ const HeroBanner = () => {
               data-aos-duration="1200"
               data-aos-once="false"
             >
-              <span>Anti-Money Laundering</span><br></br> {" "}
+              <span>Dating powered by AI...</span>
+              <br></br>{" "}
               <span className="typewrite">
                 <Typewriter
-                  words={["Self-Service", "Not Binding", "per Volume", "in the Cloud"]}
+                  words={[
+                    "deep connection",
+                    "no time wasted",
+                    "no more swiping",
+                    "fair to everyone",
+                  ]}
                   loop={true}
                   cursor
                   cursorStyle="_"
@@ -48,10 +54,10 @@ const HeroBanner = () => {
               data-aos-duration="1200"
               data-aos-once="false"
             >
-              One Stop solution to all compliance procedures.
+              Let's unfold the future together...
             </p>
 
-            <Link
+            {/* <Link
               to="/pricing"
               className="default-btn"
               data-aos="fade-up"
@@ -60,7 +66,7 @@ const HeroBanner = () => {
               data-aos-once="false"
             >
               Try Free Trial <i className="flaticon-plus-1"></i>
-            </Link>
+            </Link> */}
           </div>
 
           <div
@@ -105,7 +111,7 @@ const HeroBanner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default HeroBanner
+export default HeroBanner;

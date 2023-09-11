@@ -1,12 +1,12 @@
-import * as React from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Autoplay } from "swiper"
-import Container from "react-bootstrap/Container"
+import * as React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
+import Container from "react-bootstrap/Container";
 
-import userImg1 from "../../images/user/user1.jpg"
-import userImg2 from "../../images/user/user2.jpg"
-import userImg3 from "../../images/user/user3.jpg"
-import userImg4 from "../../images/user/user4.jpg"
+import userImg1 from "../../images/user/user1.jpg";
+import userImg2 from "../../images/user/user2.jpg";
+import userImg3 from "../../images/user/user3.jpg";
+import userImg4 from "../../images/user/user4.jpg";
 
 const TestimonialStyle2 = () => {
   return (
@@ -126,7 +126,7 @@ const TestimonialStyle2 = () => {
         </Container>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default TestimonialStyle2
+export default TestimonialStyle2;
