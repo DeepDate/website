@@ -56,17 +56,16 @@ const HeroBanner = () => {
             >
               Let's unfold the future together...
             </p>
-
-            {/* <Link
-              to="/pricing"
+            <Link
+              to="https://forms.gle/4RdkRbb5zJxArpRJ6"
               className="default-btn"
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1200"
               data-aos-once="false"
             >
-              Try Free Trial <i className="flaticon-plus-1"></i>
-            </Link> */}
+            Be the first to know! Click to join our early users.
+            </Link> 
           </div>
 
           <div
