@@ -3,9 +3,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import howItWorkImg1 from "../../images//how-it-works/how-it-work4.jpg";
-import howItWorkImg2 from "../../images//how-it-works/how-it-work5.jpg";
-import howItWorkImg3 from "../../images//how-it-works/how-it-work6.jpg";
+import howItWorkImg1 from "../../images//how-it-works/how-it-work1.jpg";
+import howItWorkImg2 from "../../images//how-it-works/how-it-work2.jpg";
+import howItWorkImg3 from "../../images//how-it-works/how-it-work3.jpg";
 
 const HowItWorks = () => {
   return (

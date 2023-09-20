@@ -60,11 +60,15 @@ const Footer = () => {
               data-aos-once="false"
             >
               <div className="single-footer-widget mb-25">
-                <Link to="/" className="logo d-inline-block">
+                {/* <Link to="/" className="logo d-inline-block">
                   <img src={whiteLogo} alt="White Logo" />
-                </Link>
+                </Link> */}
 
-                <p>Dating powered by AI, let's live in the future!</p>
+                <p>
+                  Dating powered by AI...
+                  <br />
+                  Let's live in the future!
+                </p>
 
                 {/* <ul className="social-links">
                   {socialLinks &&
@@ -133,7 +137,7 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col
+            {/* <Col
               lg={3}
               md={6}
               sm={6}
@@ -155,7 +159,7 @@ const Footer = () => {
                   </button>
                 </form>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>

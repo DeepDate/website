@@ -11,6 +11,15 @@ import overviewImg1 from "../../images/overview/overview1.jpg";
 import overviewImg2 from "../../images/overview/overview2.jpg";
 import overviewImg3 from "../../images/overview/overview3.jpg";
 
+import overviewImg4 from "../../images/overview/overview4.jpg";
+import overviewImg5 from "../../images/overview/overview5.jpg";
+import overviewImg6 from "../../images/overview/o9-new.jpg";
+
+import overviewImg8 from "../../images/overview/o8-r.jpg";
+import overviewImg9 from "../../images/overview/o9.jpg";
+import overviewImg10 from "../../images/overview/o10.jpg";
+import overviewImg11 from "../../images/overview/o11.jpg";
+
 const WhomItsFor = () => {
   return (
     <>
@@ -23,7 +32,7 @@ const WhomItsFor = () => {
             data-aos-delay="100"
             data-aos-once="false"
           >
-            <span className="sub-title">How It Works</span>
+            <span className="sub-title">Seamless blend</span>
             <h2>
               Perfect synergy of you and&nbsp;<span>Your Avatar</span>
             </h2>
@@ -102,9 +111,9 @@ const WhomItsFor = () => {
                 data-aos-delay="200"
                 data-aos-once="false"
               >
-                <img src={overviewImg1} alt="overview" />
-                <img src={overviewImg2} alt="overview" />
-                <img src={overviewImg3} alt="overview" />
+                <img src={overviewImg4} alt="overview" />
+                <img src={overviewImg8} alt="overview" />
+                <img src={overviewImg9} alt="overview" />
               </div>
             </Col>
 
@@ -200,9 +209,9 @@ const WhomItsFor = () => {
                 data-aos-delay="200"
                 data-aos-once="false"
               >
-                <img src={overviewImg1} alt="overview" />
-                <img src={overviewImg2} alt="overview" />
-                <img src={overviewImg3} alt="overview" />
+                <img src={overviewImg6} alt="overview" />
+                <img src={overviewImg10} alt="overview" />
+                <img src={overviewImg11} alt="overview" />
               </div>
             </Col>
           </Row>
