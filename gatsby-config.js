@@ -9,16 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Timo - Gatsby React SaaS & IT Solutions Landing Pages Template`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://timo-gatsby.envytheme.com`,
+    title: `DeepDate App - Dating with AI`,
+    description: `Let the future unfold itself in your dating experience.`,
+    author: `DeepDate App`,
+    siteUrl: `https://deepdate.app`,
   },
   plugins: [
     `gatsby-plugin-image`,
     "gatsby-transformer-remark",
-		"gatsby-plugin-sharp",
-		"gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,15 +28,15 @@ module.exports = {
       __key: "images",
     },
     {
-			resolve: `gatsby-transformer-json`,
-		},
+      resolve: `gatsby-transformer-json`,
+    },
     {
-			resolve: "gatsby-source-filesystem",
-			options: {
-				name: "data",
-				path: `${__dirname}/src/data/`,
-			},
-		},
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: `${__dirname}/src/data/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -52,4 +52,4 @@ module.exports = {
       },
     },
   ],
-}
+};
